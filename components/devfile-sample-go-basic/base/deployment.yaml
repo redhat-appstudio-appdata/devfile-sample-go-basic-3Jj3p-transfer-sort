@@ -23,7 +23,8 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic
     spec:
       containers:
-      - imagePullPolicy: Always
+      - image: quay.io/redhat-user-workloads/avsingh1234-tenant/devfile-sample-go-basic/devfile-sample-go-basic@sha256:1e67ee2e2ab9932479edc49d823ec2913334cad447edb0f7bc9a5fe5396307b8
+        imagePullPolicy: Always
         livenessProbe:
           httpGet:
             path: /
